@@ -13,12 +13,12 @@ function App() {
       if (name === "fname")
         return {
           fname: value,
-          lname: preValue.lname
+          lname: preValue.lname     //old object value --> fname:"",lname:""  fname:new enter value , lname="" {old value}
         };
       else if (name === "lname")
         return {
-          fname: preValue.fname,
-          lname: value
+          fname: preValue.fname,    
+          lname: value                 //after getting fname value object value --> fname: previous new enter value  ,lname:now we getting a value from user  fname:new enter value , lname="" {old value}
         };
     });
   }
